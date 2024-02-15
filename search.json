@@ -7,24 +7,24 @@
     "text": "About this blog"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
+    "objectID": "archive/post-with-code/index.html",
+    "href": "archive/post-with-code/index.html",
     "title": "Post With Code",
     "section": "",
     "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "EulerLettreDigital soon to be released",
+    "section": "",
+    "text": "A new Euler-Bernoulli digital platform will be launched at Saturday 24. Feb 2024 noon. It will start with to publish all volumes of Euler Opera Omnia and search functionality. The platform will be continually enhanced by the latest AI from Lettre AI and will be open for further development and contributions. Interested in the project? You can sign in for the newsletter and get the latest news and updates."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "EulerLettreDigital",
     "section": "",
-    "text": "Post With Code\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nFeb 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nFeb 12, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "EulerLettreDigital soon to be released\n\n\n\nnews\n\n\n\n\n\n\n\nGerd Graßhoff\n\n\nFeb 15, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
