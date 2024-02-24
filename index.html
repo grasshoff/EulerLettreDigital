@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.14">
+<meta name="generator" content="quarto-1.5.21">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -154,7 +154,7 @@ window.Quarto = {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -195,10 +195,10 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="news" data-listing-date-sort="1707951600000" data-listing-file-modified-sort="1707998579327" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="87">
+<div class="g-col-1" data-index="0" data-categories="news" data-listing-date-sort="1708729200000" data-listing-file-modified-sort="1708768228916" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="97">
 <a href="./posts/welcome/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="posts/welcome/thumbnail.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top"><img src="posts/welcome/eulerPortrait1.jpeg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Euler.Lettre.Digital to be released
@@ -209,14 +209,14 @@ news
 </div>
 </div>
 <div class="card-text listing-description">
-The digital platform Opera-Bernoulli-Euler will be inaugurated on Saturday 24 February at 12h00. You find the website at this link.It will commence with the publication of…<em></em><em></em>
+**NOTICE! Due to modifications of the semantic search component the digital platform Opera-Bernoulli-Euler will be inaugurated on Saturday 29 February at 18h00.
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Gerd Graßhoff
 </div>
 <div class="listing-date">
-Feb 15, 2024
+Feb 24, 2024
 </div>
 </div>
 </div>
@@ -307,6 +307,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/grasshoff\.github\.io\/EulerLettreDigital\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -341,7 +359,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
