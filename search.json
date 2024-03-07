@@ -14,6 +14,41 @@
     "text": "This is a post with executable code."
   },
   {
+    "objectID": "posts/vision/operabernoullieuler.html#highlights",
+    "href": "posts/vision/operabernoullieuler.html#highlights",
+    "title": "OperaBernoulliEuler OBE",
+    "section": "Highlights",
+    "text": "Highlights\nHighlights sind die Verknüpfung von den Publikationen der Euler Opera Omnia und Bernoulli Edition mit den aktuelle AI Modellen:\n\nSemantische und Schlagwortsuche über alle Werke, Briefe und zukünftig andere Schriften der Wissenschaftler wie Manuskripte.\nDynamische Entwicklung von Gesamtregistern über Namen, Orte, Datumsangaben, Schlagworte, Themenstellung.\nAutomatische Übersetzung von Texten in verschiedene Sprachen. Die Übersetzungen werden kuratiert, mit den Originaltexten verknüpft und können durch die AI-Modelle benutzt werden.\nEin Glossar erfasst die verwendete Terminologie und verknüpft sie mit den Originaltexten.\nAutomatische Erkennung von Zitaten und Quellenangaben in beliebigen anderen Texten der Sekundärliteratur.\nEin Scholarium von kuratierter Kommentierungsliteratur zu den Werken wird vom AI-Studio konsultiert und kann zitiert werden.\nEOO Series V Data publiziert mit DOI auf Zenodo Referenzdaten, die im Laufe der Nutzung von AI-Studio entstehen.\nEOO Series VI contributions werden als computable documents mit DOI auf einer Community Bernoulli Euler Kommission (Beirat) auf Zenodo publiziert und durch Lettre.ai verlegerisch produziert. Beispielsweise können “Annalen” historische Ereignisse relevant für die Werke von Euler und der Bernoulli Familie aus den Werken, Briefen, Manuskripten und kuratierter Sekundärliteratur extrahieren und als computable documents publizieren.\nBEK Newsletter informiert über Neuigkeiten und Entwicklungen."
+  },
+  {
+    "objectID": "posts/vision/operabernoullieuler.html#living-development",
+    "href": "posts/vision/operabernoullieuler.html#living-development",
+    "title": "OperaBernoulliEuler OBE",
+    "section": "Living development",
+    "text": "Living development\n\nOBE ist ein living development Projekt, für das die Bernoulli-Euler-Kommission alle 6 Monate eine Zielvorgabe für die Weiterentwicklung festlegt, einen Zwischenbericht über die erreichten Ziele entgegen nimmt und eine neue Zielvorgabe für die folgenden 6 Monate festlegt. Die Bernoulli-Euler-Kommission ist ein Gremium der Bernoulli-Euler-Gesellschaft, das die wissenschaftliche Nutzung der Werke von Euler und der Bernoulli Familie fördert. Sie ernennt einen Berichterstatter für die Vorlage der Zwischenberichte. AI Studio wird in der Regel mindestens mit Abnahme der Zwischenberichte aktualisiert und veröffentlicht somit zeitnah die neuesten Entwicklungen."
+  },
+  {
+    "objectID": "posts/vision/operabernoullieuler.html#betrieb",
+    "href": "posts/vision/operabernoullieuler.html#betrieb",
+    "title": "OperaBernoulliEuler OBE",
+    "section": "Betrieb",
+    "text": "Betrieb\n\nOBE ist ein server-basierter Web-Service\n\nEin verläßlicher 24h-Betrieb wird eingerichtet. Ausfallzeiten werden im Monitoring-Service veröffentlicht. Sie dürfen nur im Rahmen von Wartungsarbeiten vergleichbar zu Web-Services von GIT-Hub oder Huggingface auftreten.\nEs werden entkoppelte Ausfallserver angestrebt, die im Falle eines Ausfalls des Haupt-Servers den Betrieb aufrecht erhalten.\nEin Backup-Service wird eingerichtet.\nEin Monitoring-Service wird eingerichtet; dieser prüft täglich die Verfügbarkeit und Funktionalität des Web-Services. Seine Protokolle werden im Web-Service veröffentlicht."
+  },
+  {
+    "objectID": "posts/vision/operabernoullieuler.html#copyright-lizenzen-nutzungsrechte",
+    "href": "posts/vision/operabernoullieuler.html#copyright-lizenzen-nutzungsrechte",
+    "title": "OperaBernoulliEuler OBE",
+    "section": "Copyright / Lizenzen / Nutzungsrechte",
+    "text": "Copyright / Lizenzen / Nutzungsrechte\n\nDie Werke von Euler und der Bernoulli Familie sind urheberrechtlich geschützt. In der Regel bestehen Creative Commons Lizenzen, wie im Imprint des Bandes ausgewiesen.\nOBE publiziert PDF der Werke im Geltungsbereich der bestehenden Nutzungslizenz der Bernoulli-Euler-Gesellschaft (vormals erteilt an die Schweizerische Akademie der Naturwissenschaften).\nDie Nutzung von Datenauszügen für die Weiternutzung durch AI Applikationen wird lizenzrechtlich mit der Bernoulli-Euler-Gesellschaft geregelt.\nWeitere Urheberrechte, die durch Kommentare, Übersetzungen, Anmerkungen, etc. entstehen, werden in den Metadaten der entsprechenden Werke ausgewiesen."
+  },
+  {
+    "objectID": "posts/vision/operabernoullieuler.html#datenmodell",
+    "href": "posts/vision/operabernoullieuler.html#datenmodell",
+    "title": "OperaBernoulliEuler OBE",
+    "section": "Datenmodell",
+    "text": "Datenmodell\n\nEOO Werke als PDF, gescannt, OCR, Bibtex, und Text extrahiert als JSON\n\nAlle EOO Werke gescannt und OCR als PDF verfügbar\nAlle Werke in einer Datenbank bibliographisch (Bibtex) erfasst\nDaten\n\nPDF\nPDF JSON (für Textsuche)\nBibtex\n\n\nEnestoem Werke\n\nAus allen Werken wurden die Abschnitte der Eneström Nummerierung extrahiert und als Exxx referenziert\nAlle Werke in einer Datenbank bibliographisch (Bibtex) erfasst\n\nRegister\n\nPersonenregister\nOrtsregister\nSchlagwortregister\nThemenregister\nDatumsregister\n\nContributions\n\nKommentare\nÜbersetzungen\nAnmerkungen\nZitate\nQuellenangaben\nGlossar\n\nData\n\nReferenzdaten\nComputable documents"
+  },
+  {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
     "title": "Euler.Lettre.Digital to be released",
@@ -25,6 +60,6 @@
     "href": "index.html",
     "title": "EulerLettreDigital",
     "section": "",
-    "text": "Euler.Lettre.Digital to be released\n\n\n\nnews\n\n\n\n\n\n\n\nGerd Graßhoff\n\n\nFeb 24, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "OperaBernoulliEuler OBE\n\n\n\n\n\n\nGerd Graßhoff\n\n\nMar 2, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nEuler.Lettre.Digital to be released\n\n\n\nnews\n\n\n\n\n\n\n\nGerd Graßhoff\n\n\nFeb 24, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
